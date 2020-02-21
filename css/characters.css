@@ -1,0 +1,209 @@
+
+.Illust {
+  margin: 20px;
+  display: grid;
+  grid-gap: 50px;
+}
+
+.Illustitem {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 575px) {
+  .Illust {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .Illust {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .Illust {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.Card {
+  position: relative;
+  -webkit-box-flex: 0;
+          flex: 0 1 15rem;
+  background-color: #000;
+  padding-bottom: 5rem;
+  -webkit-transition: background-color 0.2s cubic-bezier(0.5, 0.3, 0.8, 0.06);
+  transition: background-color 0.2s cubic-bezier(0.5, 0.3, 0.8, 0.06);
+  color: #FFF;
+}
+.Card-thumb {
+  position: relative;
+  width: 100%;
+  height: 90%;
+  -webkit-perspective-origin: 50% 0%;
+          perspective-origin: 50% 0%;
+  -webkit-perspective: 600px;
+          perspective: 600px;
+  z-index: 1;
+}
+.Card-image,
+.Card-shadow {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1);
+}
+.Card-shadow {
+  opacity: 0.8;
+}
+.Card-shadow:nth-child(1) {
+  opacity: 0.6;
+  background-color: #673ab7;
+  -webkit-transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1) 0.07s;
+  transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1) 0.07s;
+}
+
+.Card-image {
+  position: relative;
+  background-size: auto 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #222;
+}
+.Card-image::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #3f51b5;
+  content: '';
+  opacity: 0;
+  -webkit-transition: opacity 0.1s;
+  transition: opacity 0.1s;
+}
+.Card-title,
+.Card-explore {
+  position: absolute;
+  bottom: 0;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  width: 100%;
+  height: 5rem;
+  text-align: center;
+
+  -webkit-transition: all 0.2s cubic-bezier(0.5, 0.3, 0.8, 0.06);
+  transition: all 0.2s cubic-bezier(0.5, 0.3, 0.8, 0.06);
+}
+.Card-title span,
+.Card-explore span {
+  padding: 0.5rem;
+  -webkit-box-flex: 1;
+          flex: 1 1 auto;
+  text-align: center;
+  font-size: 20px;
+}
+.Card-explore {
+  opacity: 0;
+  -webkit-transform: translate(0, -1rem);
+          transform: translate(0, -1rem);
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  color: #673ab7;
+}
+
+.Card:hover,
+.Card--active {
+  background-color: #222;
+  cursor: pointer;
+}
+.Card:hover .Card-thumb,
+.Card--active .Card-thumb {
+  z-index: 3;
+}
+.Card:hover .Card-title,
+.Card--active .Card-title {
+  opacity: 0;
+}
+.Card:hover .Card-explore,
+.Card--active .Card-explore {
+  opacity: 1;
+  -webkit-transform: translate(0, 1rem);
+          transform: translate(0, 1rem);
+  -webkit-transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1) 0.1s;
+  transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1) 0.1s;
+}
+.Card:hover .Card-image,
+.Card--active .Card-image {
+  -webkit-transform: scale(1.00) translate(0, -0.5rem) rotateX(20deg);
+          transform: scale(1.00) translate(0, -0.5rem) rotateX(20deg);
+}
+.Card:hover .Card-image::before,
+.Card--active .Card-image::before {
+  opacity: 0.4;
+}
+
+.Card:hover .Card-shadow:nth-child(1),
+.Card--active .Card-shadow:nth-child(1) {
+  -webkit-transform: scale(0.82) translate(0, 2.0rem) rotateX(5deg);
+          transform: scale(0.82) translate(0, 2.0rem) rotateX(5deg);
+}
+.Card:hover .Card-button,
+.Card--active .Card-button {
+  opacity: 1;
+  color: #3f51b5;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+.Card:hover .Card-button:hover,
+.Card--active .Card-button:hover {
+  color: #fff;
+  background-color: #3f51b5;
+}
+.Card--active,
+.Card--active:hover {
+  background: none;
+}
+.Card--active .Card-explore,
+.Card--active:hover .Card-explore {
+  opacity: 0;
+  -webkit-transform: translate(0, 3rem);
+          transform: translate(0, 3rem);
+  -webkit-transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+}
+.Card--active .Card-image,
+.Card--active:hover .Card-image {
+  opacity: 0;
+  -webkit-transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+  -webkit-transform: scale(1.05) translate(0, -2.5rem) rotateX(50deg);
+          transform: scale(1.05) translate(0, -2.5rem) rotateX(50deg);
+}
+.Card--active .Card-image::before,
+.Card--active:hover .Card-image::before {
+  opacity: 0.4;
+}
+.Card--active .Card-button,
+.Card--active:hover .Card-button {
+  opacity: 0;
+  -webkit-transition: all 0.35s cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 0.35s cubic-bezier(0.42, 0, 0.58, 1);
+  -webkit-transform: translate(-50%, -2rem) scale(1, 0.4);
+          transform: translate(-50%, -2rem) scale(1, 0.4);
+}
+
+.Grid-row:nth-child(1) .Card:nth-child(1).Card--active .Card-shadow:nth-child(1),
+.Grid-row:nth-child(1) .Card:nth-child(1) .Card--active:hover .Card-shadow:nth-child(1) {
+  -webkit-transition: all 0.2s cubic-bezier(0.7, 0, 0.78, 1) 0.2s;
+  transition: all 0.2s cubic-bezier(0.7, 0, 0.78, 1) 0.2s;
+  -webkit-transform: scale(2.1) translate(81%, 80%);
+          transform: scale(2.1) translate(81%, 80%);
+}
