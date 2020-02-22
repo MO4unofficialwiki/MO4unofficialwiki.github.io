@@ -29,7 +29,9 @@
   }
 }
 
-.Card {
+/* card for sigkin */
+
+.Card_sg {
   position: relative;
   -webkit-box-flex: 0;
           flex: 0 1 15rem;
@@ -39,18 +41,18 @@
   transition: background-color 0.2s cubic-bezier(0.5, 0.3, 0.8, 0.06);
   color: #FFF;
 }
-.Card-thumb {
+.Card-thumb_sg {
   position: relative;
   width: 100%;
-  height: 90%;
+  height: 100%;
   -webkit-perspective-origin: 50% 0%;
           perspective-origin: 50% 0%;
   -webkit-perspective: 600px;
           perspective: 600px;
   z-index: 1;
 }
-.Card-image,
-.Card-shadow {
+.Card-image_sg,
+.Card-shadow_sg {
   position: absolute;
   display: block;
   width: 100%;
@@ -58,24 +60,24 @@
   -webkit-transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1);
   transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1);
 }
-.Card-shadow {
+.Card-shadow_sg {
   opacity: 0.8;
 }
-.Card-shadow:nth-child(1) {
+.Card-shadow_sg:nth-child(1) {
   opacity: 0.6;
   background-color: #673ab7;
   -webkit-transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1) 0.07s;
   transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1) 0.07s;
 }
 
-.Card-image {
+.Card-image_sg {
   position: relative;
   background-size: auto 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-color: #222;
 }
-.Card-image::before {
+.Card-image_sg::before {
   position: absolute;
   top: 0;
   right: 0;
@@ -87,8 +89,8 @@
   -webkit-transition: opacity 0.1s;
   transition: opacity 0.1s;
 }
-.Card-title,
-.Card-explore {
+
+.Card-explore_sg {
   position: absolute;
   bottom: 0;
   display: -webkit-box;
@@ -102,15 +104,15 @@
   -webkit-transition: all 0.2s cubic-bezier(0.5, 0.3, 0.8, 0.06);
   transition: all 0.2s cubic-bezier(0.5, 0.3, 0.8, 0.06);
 }
-.Card-title span,
-.Card-explore span {
+
+.Card-explore_sg span {
   padding: 0.5rem;
   -webkit-box-flex: 1;
           flex: 1 1 auto;
   text-align: center;
   font-size: 20px;
 }
-.Card-explore {
+.Card-explore_sg {
   opacity: 0;
   -webkit-transform: translate(0, -1rem);
           transform: translate(0, -1rem);
@@ -119,91 +121,1984 @@
   color: #673ab7;
 }
 
-.Card:hover,
-.Card--active {
+.Card_sg:hover {
   background-color: #222;
   cursor: pointer;
 }
-.Card:hover .Card-thumb,
-.Card--active .Card-thumb {
+.Card_sg:hover .Card-thumb_sg {
   z-index: 3;
 }
-.Card:hover .Card-title,
-.Card--active .Card-title {
-  opacity: 0;
-}
-.Card:hover .Card-explore,
-.Card--active .Card-explore {
+
+.Card_sg:hover .Card-explore_sg {
   opacity: 1;
   -webkit-transform: translate(0, 1rem);
           transform: translate(0, 1rem);
   -webkit-transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1) 0.1s;
   transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1) 0.1s;
 }
-.Card:hover .Card-image,
-.Card--active .Card-image {
+.Card_sg:hover .Card-image_sg {
   -webkit-transform: scale(1.00) translate(0, -0.5rem) rotateX(20deg);
           transform: scale(1.00) translate(0, -0.5rem) rotateX(20deg);
 }
-.Card:hover .Card-image::before,
-.Card--active .Card-image::before {
+.Card_sg:hover .Card-image_sg::before {
   opacity: 0.4;
 }
 
-.Card:hover .Card-shadow:nth-child(1),
-.Card--active .Card-shadow:nth-child(1) {
+.Card_sg:hover .Card-shadow_sg:nth-child(1) {
   -webkit-transform: scale(0.82) translate(0, 2.0rem) rotateX(5deg);
           transform: scale(0.82) translate(0, 2.0rem) rotateX(5deg);
 }
-.Card:hover .Card-button,
-.Card--active .Card-button {
-  opacity: 1;
-  color: #3f51b5;
-  -webkit-transform: translate(-50%, 0);
-          transform: translate(-50%, 0);
+
+/* end for card for sigkin */
+
+/* card for bachikin */
+
+.Card_bc {
+  position: relative;
+  -webkit-box-flex: 0;
+          flex: 0 1 15rem;
+  background-color: #000;
+  padding-bottom: 5rem;
+  -webkit-transition: background-color 0.2s cubic-bezier(0.5, 0.3, 0.8, 0.06);
+  transition: background-color 0.2s cubic-bezier(0.5, 0.3, 0.8, 0.06);
+  color: #FFF;
 }
-.Card:hover .Card-button:hover,
-.Card--active .Card-button:hover {
-  color: #fff;
-  background-color: #3f51b5;
+.Card-thumb_bc {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  -webkit-perspective-origin: 50% 0%;
+          perspective-origin: 50% 0%;
+  -webkit-perspective: 600px;
+          perspective: 600px;
+  z-index: 1;
 }
-.Card--active,
-.Card--active:hover {
-  background: none;
+.Card-image_bc,
+.Card-shadow_bc {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1);
 }
-.Card--active .Card-explore,
-.Card--active:hover .Card-explore {
-  opacity: 0;
-  -webkit-transform: translate(0, 3rem);
-          transform: translate(0, 3rem);
-  -webkit-transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
-  transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+.Card-shadow_bc {
+  opacity: 0.8;
 }
-.Card--active .Card-image,
-.Card--active:hover .Card-image {
-  opacity: 0;
-  -webkit-transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
-  transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
-  -webkit-transform: scale(1.05) translate(0, -2.5rem) rotateX(50deg);
-          transform: scale(1.05) translate(0, -2.5rem) rotateX(50deg);
-}
-.Card--active .Card-image::before,
-.Card--active:hover .Card-image::before {
-  opacity: 0.4;
-}
-.Card--active .Card-button,
-.Card--active:hover .Card-button {
-  opacity: 0;
-  -webkit-transition: all 0.35s cubic-bezier(0.42, 0, 0.58, 1);
-  transition: all 0.35s cubic-bezier(0.42, 0, 0.58, 1);
-  -webkit-transform: translate(-50%, -2rem) scale(1, 0.4);
-          transform: translate(-50%, -2rem) scale(1, 0.4);
+.Card-shadow_bc:nth-child(1) {
+  opacity: 0.6;
+  background-color: #FF0080;
+  -webkit-transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1) 0.07s;
+  transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1) 0.07s;
 }
 
-.Grid-row:nth-child(1) .Card:nth-child(1).Card--active .Card-shadow:nth-child(1),
-.Grid-row:nth-child(1) .Card:nth-child(1) .Card--active:hover .Card-shadow:nth-child(1) {
-  -webkit-transition: all 0.2s cubic-bezier(0.7, 0, 0.78, 1) 0.2s;
-  transition: all 0.2s cubic-bezier(0.7, 0, 0.78, 1) 0.2s;
-  -webkit-transform: scale(2.1) translate(81%, 80%);
-          transform: scale(2.1) translate(81%, 80%);
+.Card-image_bc {
+  position: relative;
+  background-size: auto 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #222;
 }
+.Card-image_bc::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #3f51b5;
+  content: '';
+  opacity: 0;
+  -webkit-transition: opacity 0.1s;
+  transition: opacity 0.1s;
+}
+
+.Card-explore_bc {
+  position: absolute;
+  bottom: 0;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  width: 100%;
+  height: 5rem;
+  text-align: center;
+
+  -webkit-transition: all 0.2s cubic-bezier(0.5, 0.3, 0.8, 0.06);
+  transition: all 0.2s cubic-bezier(0.5, 0.3, 0.8, 0.06);
+}
+
+.Card-explore_bc span {
+  padding: 0.5rem;
+  -webkit-box-flex: 1;
+          flex: 1 1 auto;
+  text-align: center;
+  font-size: 20px;
+}
+.Card-explore_bc {
+  opacity: 0;
+  -webkit-transform: translate(0, -1rem);
+          transform: translate(0, -1rem);
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  color: #FF0080;
+}
+
+.Card_bc:hover {
+  background-color: #222;
+  cursor: pointer;
+}
+.Card_bc:hover .Card-thumb_bc {
+  z-index: 3;
+}
+
+.Card_bc:hover .Card-explore_bc {
+  opacity: 1;
+  -webkit-transform: translate(0, 1rem);
+          transform: translate(0, 1rem);
+  -webkit-transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1) 0.1s;
+  transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1) 0.1s;
+}
+.Card_bc:hover .Card-image_bc {
+  -webkit-transform: scale(1.00) translate(0, -0.5rem) rotateX(20deg);
+          transform: scale(1.00) translate(0, -0.5rem) rotateX(20deg);
+}
+.Card_bc:hover .Card-image_bc::before {
+  opacity: 0.4;
+}
+
+.Card_bc:hover .Card-shadow_bc:nth-child(1) {
+  -webkit-transform: scale(0.82) translate(0, 2.0rem) rotateX(5deg);
+          transform: scale(0.82) translate(0, 2.0rem) rotateX(5deg);
+}
+
+/* end for card for bachikin */
+
+/* card for otsukin */
+
+.Card_ot {
+  position: relative;
+  -webkit-box-flex: 0;
+          flex: 0 1 15rem;
+  background-color: #000;
+  padding-bottom: 5rem;
+  -webkit-transition: background-color 0.2s cubic-bezier(0.5, 0.3, 0.8, 0.06);
+  transition: background-color 0.2s cubic-bezier(0.5, 0.3, 0.8, 0.06);
+  color: #FFF;
+}
+.Card-thumb_ot {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  -webkit-perspective-origin: 50% 0%;
+          perspective-origin: 50% 0%;
+  -webkit-perspective: 600px;
+          perspective: 600px;
+  z-index: 1;
+}
+.Card-image_ot,
+.Card-shadow_ot {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1);
+}
+.Card-shadow_ot {
+  opacity: 0.8;
+}
+.Card-shadow_ot:nth-child(1) {
+  opacity: 0.6;
+  background-color: #007500;
+  -webkit-transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1) 0.07s;
+  transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1) 0.07s;
+}
+
+.Card-image_ot {
+  position: relative;
+  background-size: auto 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #222;
+}
+.Card-image_ot::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #3f51b5;
+  content: '';
+  opacity: 0;
+  -webkit-transition: opacity 0.1s;
+  transition: opacity 0.1s;
+}
+
+.Card-explore_ot {
+  position: absolute;
+  bottom: 0;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  width: 100%;
+  height: 5rem;
+  text-align: center;
+
+  -webkit-transition: all 0.2s cubic-bezier(0.5, 0.3, 0.8, 0.06);
+  transition: all 0.2s cubic-bezier(0.5, 0.3, 0.8, 0.06);
+}
+
+.Card-explore_ot span {
+  padding: 0.5rem;
+  -webkit-box-flex: 1;
+          flex: 1 1 auto;
+  text-align: center;
+  font-size: 20px;
+}
+.Card-explore_ot {
+  opacity: 0;
+  -webkit-transform: translate(0, -1rem);
+          transform: translate(0, -1rem);
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  color: #007500;
+}
+
+.Card_ot:hover {
+  background-color: #222;
+  cursor: pointer;
+}
+.Card_ot:hover .Card-thumb_ot {
+  z-index: 3;
+}
+
+.Card_ot:hover .Card-explore_ot {
+  opacity: 1;
+  -webkit-transform: translate(0, 1rem);
+          transform: translate(0, 1rem);
+  -webkit-transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1) 0.1s;
+  transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1) 0.1s;
+}
+.Card_ot:hover .Card-image_ot {
+  -webkit-transform: scale(1.00) translate(0, -0.5rem) rotateX(20deg);
+          transform: scale(1.00) translate(0, -0.5rem) rotateX(20deg);
+}
+.Card_ot:hover .Card-image_ot::before {
+  opacity: 0.4;
+}
+
+.Card_ot:hover .Card-shadow_ot:nth-child(1) {
+  -webkit-transform: scale(0.82) translate(0, 2.0rem) rotateX(5deg);
+          transform: scale(0.82) translate(0, 2.0rem) rotateX(5deg);
+}
+
+/* end for card for otsukin */
+
+/* card for syumitaro */
+
+.Card_sy {
+  position: relative;
+  -webkit-box-flex: 0;
+          flex: 0 1 15rem;
+  background-color: #000;
+  padding-bottom: 5rem;
+  -webkit-transition: background-color 0.2s cubic-bezier(0.5, 0.3, 0.8, 0.06);
+  transition: background-color 0.2s cubic-bezier(0.5, 0.3, 0.8, 0.06);
+  color: #FFF;
+}
+.Card-thumb_sy {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  -webkit-perspective-origin: 50% 0%;
+          perspective-origin: 50% 0%;
+  -webkit-perspective: 600px;
+          perspective: 600px;
+  z-index: 1;
+}
+.Card-image_sy,
+.Card-shadow_sy {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1);
+}
+.Card-shadow_sy {
+  opacity: 0.8;
+}
+.Card-shadow_sy:nth-child(1) {
+  opacity: 0.6;
+  background-color: #005AB5;
+  -webkit-transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1) 0.07s;
+  transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1) 0.07s;
+}
+
+.Card-image_sy {
+  position: relative;
+  background-size: auto 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #222;
+}
+.Card-image_sy::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #3f51b5;
+  content: '';
+  opacity: 0;
+  -webkit-transition: opacity 0.1s;
+  transition: opacity 0.1s;
+}
+
+.Card-explore_sy {
+  position: absolute;
+  bottom: 0;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  width: 100%;
+  height: 5rem;
+  text-align: center;
+
+  -webkit-transition: all 0.2s cubic-bezier(0.5, 0.3, 0.8, 0.06);
+  transition: all 0.2s cubic-bezier(0.5, 0.3, 0.8, 0.06);
+}
+
+.Card-explore_sy span {
+  padding: 0.5rem;
+  -webkit-box-flex: 1;
+          flex: 1 1 auto;
+  text-align: center;
+  font-size: 20px;
+}
+.Card-explore_sy {
+  opacity: 0;
+  -webkit-transform: translate(0, -1rem);
+          transform: translate(0, -1rem);
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  color: #005AB5;
+}
+
+.Card_sy:hover {
+  background-color: #222;
+  cursor: pointer;
+}
+.Card_sy:hover .Card-thumb_sy {
+  z-index: 3;
+}
+
+.Card_sy:hover .Card-explore_sy {
+  opacity: 1;
+  -webkit-transform: translate(0, 1rem);
+          transform: translate(0, 1rem);
+  -webkit-transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1) 0.1s;
+  transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1) 0.1s;
+}
+.Card_sy:hover .Card-image_sy {
+  -webkit-transform: scale(1.00) translate(0, -0.5rem) rotateX(20deg);
+          transform: scale(1.00) translate(0, -0.5rem) rotateX(20deg);
+}
+.Card_sy:hover .Card-image_sy::before {
+  opacity: 0.4;
+}
+
+.Card_sy:hover .Card-shadow_sy:nth-child(1) {
+  -webkit-transform: scale(0.82) translate(0, 2.0rem) rotateX(5deg);
+          transform: scale(0.82) translate(0, 2.0rem) rotateX(5deg);
+}
+
+/* end for card for syumitaro */
+
+/* card for jack */
+
+.Card_ja {
+  position: relative;
+  -webkit-box-flex: 0;
+          flex: 0 1 15rem;
+  background-color: #000;
+  padding-bottom: 5rem;
+  -webkit-transition: background-color 0.2s cubic-bezier(0.5, 0.3, 0.8, 0.06);
+  transition: background-color 0.2s cubic-bezier(0.5, 0.3, 0.8, 0.06);
+  color: #FFF;
+}
+.Card-thumb_ja {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  -webkit-perspective-origin: 50% 0%;
+          perspective-origin: 50% 0%;
+  -webkit-perspective: 600px;
+          perspective: 600px;
+  z-index: 1;
+}
+.Card-image_ja,
+.Card-shadow_ja {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1);
+}
+.Card-shadow_ja {
+  opacity: 0.8;
+}
+.Card-shadow_ja:nth-child(1) {
+  opacity: 0.6;
+  background-color: #2894FF;
+  -webkit-transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1) 0.07s;
+  transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1) 0.07s;
+}
+
+.Card-image_ja {
+  position: relative;
+  background-size: auto 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #222;
+}
+.Card-image_ja::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #3f51b5;
+  content: '';
+  opacity: 0;
+  -webkit-transition: opacity 0.1s;
+  transition: opacity 0.1s;
+}
+
+.Card-explore_ja {
+  position: absolute;
+  bottom: 0;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  width: 100%;
+  height: 5rem;
+  text-align: center;
+
+  -webkit-transition: all 0.2s cubic-bezier(0.5, 0.3, 0.8, 0.06);
+  transition: all 0.2s cubic-bezier(0.5, 0.3, 0.8, 0.06);
+}
+
+.Card-explore_ja span {
+  padding: 0.5rem;
+  -webkit-box-flex: 1;
+          flex: 1 1 auto;
+  text-align: center;
+  font-size: 20px;
+}
+.Card-explore_ja {
+  opacity: 0;
+  -webkit-transform: translate(0, -1rem);
+          transform: translate(0, -1rem);
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  color: #2894FF;
+}
+
+.Card_ja:hover {
+  background-color: #222;
+  cursor: pointer;
+}
+.Card_ja:hover .Card-thumb_ja {
+  z-index: 3;
+}
+
+.Card_ja:hover .Card-explore_ja {
+  opacity: 1;
+  -webkit-transform: translate(0, 1rem);
+          transform: translate(0, 1rem);
+  -webkit-transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1) 0.1s;
+  transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1) 0.1s;
+}
+.Card_ja:hover .Card-image_ja {
+  -webkit-transform: scale(1.00) translate(0, -0.5rem) rotateX(20deg);
+          transform: scale(1.00) translate(0, -0.5rem) rotateX(20deg);
+}
+.Card_ja:hover .Card-image_ja::before {
+  opacity: 0.4;
+}
+
+.Card_ja:hover .Card-shadow_ja:nth-child(1) {
+  -webkit-transform: scale(0.82) translate(0, 2.0rem) rotateX(5deg);
+          transform: scale(0.82) translate(0, 2.0rem) rotateX(5deg);
+}
+
+/* end for card for jack */
+
+/* card for cooletla */
+
+.Card_co {
+  position: relative;
+  -webkit-box-flex: 0;
+          flex: 0 1 15rem;
+  background-color: #000;
+  padding-bottom: 5rem;
+  -webkit-transition: background-color 0.2s cubic-bezier(0.5, 0.3, 0.8, 0.06);
+  transition: background-color 0.2s cubic-bezier(0.5, 0.3, 0.8, 0.06);
+  color: #FFF;
+}
+.Card-thumb_co {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  -webkit-perspective-origin: 50% 0%;
+          perspective-origin: 50% 0%;
+  -webkit-perspective: 600px;
+          perspective: 600px;
+  z-index: 1;
+}
+.Card-image_co,
+.Card-shadow_co {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1);
+}
+.Card-shadow_co {
+  opacity: 0.8;
+}
+.Card-shadow_co:nth-child(1) {
+  opacity: 0.6;
+  background-color: #6A6AFF;
+  -webkit-transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1) 0.07s;
+  transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1) 0.07s;
+}
+
+.Card-image_co {
+  position: relative;
+  background-size: auto 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #222;
+}
+.Card-image_co::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #3f51b5;
+  content: '';
+  opacity: 0;
+  -webkit-transition: opacity 0.1s;
+  transition: opacity 0.1s;
+}
+
+.Card-explore_co {
+  position: absolute;
+  bottom: 0;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  width: 100%;
+  height: 5rem;
+  text-align: center;
+
+  -webkit-transition: all 0.2s cubic-bezier(0.5, 0.3, 0.8, 0.06);
+  transition: all 0.2s cubic-bezier(0.5, 0.3, 0.8, 0.06);
+}
+
+.Card-explore_co span {
+  padding: 0.5rem;
+  -webkit-box-flex: 1;
+          flex: 1 1 auto;
+  text-align: center;
+  font-size: 20px;
+}
+.Card-explore_co {
+  opacity: 0;
+  -webkit-transform: translate(0, -1rem);
+          transform: translate(0, -1rem);
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  color: #6A6AFF;
+}
+
+.Card_co:hover {
+  background-color: #222;
+  cursor: pointer;
+}
+.Card_co:hover .Card-thumb_co {
+  z-index: 3;
+}
+
+.Card_co:hover .Card-explore_co {
+  opacity: 1;
+  -webkit-transform: translate(0, 1rem);
+          transform: translate(0, 1rem);
+  -webkit-transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1) 0.1s;
+  transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1) 0.1s;
+}
+.Card_co:hover .Card-image_co {
+  -webkit-transform: scale(1.00) translate(0, -0.5rem) rotateX(20deg);
+          transform: scale(1.00) translate(0, -0.5rem) rotateX(20deg);
+}
+.Card_co:hover .Card-image_co::before {
+  opacity: 0.4;
+}
+
+.Card_co:hover .Card-shadow_co:nth-child(1) {
+  -webkit-transform: scale(0.82) translate(0, 2.0rem) rotateX(5deg);
+          transform: scale(0.82) translate(0, 2.0rem) rotateX(5deg);
+}
+
+/* end for card for cooletla */
+
+/* card for marikin */
+
+.Card_mr {
+  position: relative;
+  -webkit-box-flex: 0;
+          flex: 0 1 15rem;
+  background-color: #000;
+  padding-bottom: 5rem;
+  -webkit-transition: background-color 0.2s cubic-bezier(0.5, 0.3, 0.8, 0.06);
+  transition: background-color 0.2s cubic-bezier(0.5, 0.3, 0.8, 0.06);
+  color: #FFF;
+}
+.Card-thumb_mr {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  -webkit-perspective-origin: 50% 0%;
+          perspective-origin: 50% 0%;
+  -webkit-perspective: 600px;
+          perspective: 600px;
+  z-index: 1;
+}
+.Card-image_mr,
+.Card-shadow_mr {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1);
+}
+.Card-shadow_mr {
+  opacity: 0.8;
+}
+.Card-shadow_mr:nth-child(1) {
+  opacity: 0.6;
+  background-color: #00E3E3;
+  -webkit-transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1) 0.07s;
+  transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1) 0.07s;
+}
+
+.Card-image_mr {
+  position: relative;
+  background-size: auto 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #222;
+}
+.Card-image_mr::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #3f51b5;
+  content: '';
+  opacity: 0;
+  -webkit-transition: opacity 0.1s;
+  transition: opacity 0.1s;
+}
+
+.Card-explore_mr {
+  position: absolute;
+  bottom: 0;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  width: 100%;
+  height: 5rem;
+  text-align: center;
+
+  -webkit-transition: all 0.2s cubic-bezier(0.5, 0.3, 0.8, 0.06);
+  transition: all 0.2s cubic-bezier(0.5, 0.3, 0.8, 0.06);
+}
+
+.Card-explore_mr span {
+  padding: 0.5rem;
+  -webkit-box-flex: 1;
+          flex: 1 1 auto;
+  text-align: center;
+  font-size: 20px;
+}
+.Card-explore_mr {
+  opacity: 0;
+  -webkit-transform: translate(0, -1rem);
+          transform: translate(0, -1rem);
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  color: #00E3E3;
+}
+
+.Card_mr:hover {
+  background-color: #222;
+  cursor: pointer;
+}
+.Card_mr:hover .Card-thumb_mr {
+  z-index: 3;
+}
+
+.Card_mr:hover .Card-explore_mr {
+  opacity: 1;
+  -webkit-transform: translate(0, 1rem);
+          transform: translate(0, 1rem);
+  -webkit-transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1) 0.1s;
+  transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1) 0.1s;
+}
+.Card_mr:hover .Card-image_mr {
+  -webkit-transform: scale(1.00) translate(0, -0.5rem) rotateX(20deg);
+          transform: scale(1.00) translate(0, -0.5rem) rotateX(20deg);
+}
+.Card_mr:hover .Card-image_mr::before {
+  opacity: 0.4;
+}
+
+.Card_mr:hover .Card-shadow_mr:nth-child(1) {
+  -webkit-transform: scale(0.82) translate(0, 2.0rem) rotateX(5deg);
+          transform: scale(0.82) translate(0, 2.0rem) rotateX(5deg);
+}
+
+/* end for card for marikin */
+
+/* card for fsakin */
+
+.Card_fs {
+  position: relative;
+  -webkit-box-flex: 0;
+          flex: 0 1 15rem;
+  background-color: #000;
+  padding-bottom: 5rem;
+  -webkit-transition: background-color 0.2s cubic-bezier(0.5, 0.3, 0.8, 0.06);
+  transition: background-color 0.2s cubic-bezier(0.5, 0.3, 0.8, 0.06);
+  color: #FFF;
+}
+.Card-thumb_fs {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  -webkit-perspective-origin: 50% 0%;
+          perspective-origin: 50% 0%;
+  -webkit-perspective: 600px;
+          perspective: 600px;
+  z-index: 1;
+}
+.Card-image_fs,
+.Card-shadow_fs {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1);
+}
+.Card-shadow_fs {
+  opacity: 0.8;
+}
+.Card-shadow_fs:nth-child(1) {
+  opacity: 0.6;
+  background-color: #003D79;
+  -webkit-transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1) 0.07s;
+  transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1) 0.07s;
+}
+
+.Card-image_fs {
+  position: relative;
+  background-size: auto 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #222;
+}
+.Card-image_fs::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #3f51b5;
+  content: '';
+  opacity: 0;
+  -webkit-transition: opacity 0.1s;
+  transition: opacity 0.1s;
+}
+
+.Card-explore_fs {
+  position: absolute;
+  bottom: 0;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  width: 100%;
+  height: 5rem;
+  text-align: center;
+
+  -webkit-transition: all 0.2s cubic-bezier(0.5, 0.3, 0.8, 0.06);
+  transition: all 0.2s cubic-bezier(0.5, 0.3, 0.8, 0.06);
+}
+
+.Card-explore_fs span {
+  padding: 0.5rem;
+  -webkit-box-flex: 1;
+          flex: 1 1 auto;
+  text-align: center;
+  font-size: 20px;
+}
+.Card-explore_fs {
+  opacity: 0;
+  -webkit-transform: translate(0, -1rem);
+          transform: translate(0, -1rem);
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  color: #003D79;
+}
+
+.Card_fs:hover {
+  background-color: #222;
+  cursor: pointer;
+}
+.Card_fs:hover .Card-thumb_fs {
+  z-index: 3;
+}
+
+.Card_fs:hover .Card-explore_fs {
+  opacity: 1;
+  -webkit-transform: translate(0, 1rem);
+          transform: translate(0, 1rem);
+  -webkit-transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1) 0.1s;
+  transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1) 0.1s;
+}
+.Card_fs:hover .Card-image_fs {
+  -webkit-transform: scale(1.00) translate(0, -0.5rem) rotateX(20deg);
+          transform: scale(1.00) translate(0, -0.5rem) rotateX(20deg);
+}
+.Card_fs:hover .Card-image_fs::before {
+  opacity: 0.4;
+}
+
+.Card_fs:hover .Card-shadow_fs:nth-child(1) {
+  -webkit-transform: scale(0.82) translate(0, 2.0rem) rotateX(5deg);
+          transform: scale(0.82) translate(0, 2.0rem) rotateX(5deg);
+}
+
+/* end for card for fsakin */
+
+/* card for adukin */
+
+.Card_ad {
+  position: relative;
+  -webkit-box-flex: 0;
+          flex: 0 1 15rem;
+  background-color: #000;
+  padding-bottom: 5rem;
+  -webkit-transition: background-color 0.2s cubic-bezier(0.5, 0.3, 0.8, 0.06);
+  transition: background-color 0.2s cubic-bezier(0.5, 0.3, 0.8, 0.06);
+  color: #FFF;
+}
+.Card-thumb_ad {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  -webkit-perspective-origin: 50% 0%;
+          perspective-origin: 50% 0%;
+  -webkit-perspective: 600px;
+          perspective: 600px;
+  z-index: 1;
+}
+.Card-image_ad,
+.Card-shadow_ad {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1);
+}
+.Card-shadow_ad {
+  opacity: 0.8;
+}
+.Card-shadow_ad:nth-child(1) {
+  opacity: 0.6;
+  background-color: #EA0000;
+  -webkit-transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1) 0.07s;
+  transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1) 0.07s;
+}
+
+.Card-image_ad {
+  position: relative;
+  background-size: auto 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #222;
+}
+.Card-image_ad::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #3f51b5;
+  content: '';
+  opacity: 0;
+  -webkit-transition: opacity 0.1s;
+  transition: opacity 0.1s;
+}
+
+.Card-explore_ad {
+  position: absolute;
+  bottom: 0;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  width: 100%;
+  height: 5rem;
+  text-align: center;
+
+  -webkit-transition: all 0.2s cubic-bezier(0.5, 0.3, 0.8, 0.06);
+  transition: all 0.2s cubic-bezier(0.5, 0.3, 0.8, 0.06);
+}
+
+.Card-explore_ad span {
+  padding: 0.5rem;
+  -webkit-box-flex: 1;
+          flex: 1 1 auto;
+  text-align: center;
+  font-size: 20px;
+}
+.Card-explore_ad {
+  opacity: 0;
+  -webkit-transform: translate(0, -1rem);
+          transform: translate(0, -1rem);
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  color: #EA0000;
+}
+
+.Card_ad:hover {
+  background-color: #222;
+  cursor: pointer;
+}
+.Card_ad:hover .Card-thumb_ad {
+  z-index: 3;
+}
+
+.Card_ad:hover .Card-explore_ad {
+  opacity: 1;
+  -webkit-transform: translate(0, 1rem);
+          transform: translate(0, 1rem);
+  -webkit-transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1) 0.1s;
+  transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1) 0.1s;
+}
+.Card_ad:hover .Card-image_ad {
+  -webkit-transform: scale(1.00) translate(0, -0.5rem) rotateX(20deg);
+          transform: scale(1.00) translate(0, -0.5rem) rotateX(20deg);
+}
+.Card_ad:hover .Card-image_ad::before {
+  opacity: 0.4;
+}
+
+.Card_ad:hover .Card-shadow_ad:nth-child(1) {
+  -webkit-transform: scale(0.82) translate(0, 2.0rem) rotateX(5deg);
+          transform: scale(0.82) translate(0, 2.0rem) rotateX(5deg);
+}
+
+/* end for card for adukin */
+
+/* card for eclair */
+
+.Card_ec {
+  position: relative;
+  -webkit-box-flex: 0;
+          flex: 0 1 15rem;
+  background-color: #000;
+  padding-bottom: 5rem;
+  -webkit-transition: background-color 0.2s cubic-bezier(0.5, 0.3, 0.8, 0.06);
+  transition: background-color 0.2s cubic-bezier(0.5, 0.3, 0.8, 0.06);
+  color: #FFF;
+}
+.Card-thumb_ec {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  -webkit-perspective-origin: 50% 0%;
+          perspective-origin: 50% 0%;
+  -webkit-perspective: 600px;
+          perspective: 600px;
+  z-index: 1;
+}
+.Card-image_ec,
+.Card-shadow_ec {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1);
+}
+.Card-shadow_ec {
+  opacity: 0.8;
+}
+.Card-shadow_ec:nth-child(1) {
+  opacity: 0.6;
+  background-color: #007500;
+  -webkit-transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1) 0.07s;
+  transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1) 0.07s;
+}
+
+.Card-image_ec {
+  position: relative;
+  background-size: auto 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #222;
+}
+.Card-image_ec::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #3f51b5;
+  content: '';
+  opacity: 0;
+  -webkit-transition: opacity 0.1s;
+  transition: opacity 0.1s;
+}
+
+.Card-explore_ec {
+  position: absolute;
+  bottom: 0;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  width: 100%;
+  height: 5rem;
+  text-align: center;
+
+  -webkit-transition: all 0.2s cubic-bezier(0.5, 0.3, 0.8, 0.06);
+  transition: all 0.2s cubic-bezier(0.5, 0.3, 0.8, 0.06);
+}
+
+.Card-explore_ec span {
+  padding: 0.5rem;
+  -webkit-box-flex: 1;
+          flex: 1 1 auto;
+  text-align: center;
+  font-size: 20px;
+}
+.Card-explore_ec {
+  opacity: 0;
+  -webkit-transform: translate(0, -1rem);
+          transform: translate(0, -1rem);
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  color: #007500;
+}
+
+.Card_ec:hover {
+  background-color: #222;
+  cursor: pointer;
+}
+.Card_ec:hover .Card-thumb_ec {
+  z-index: 3;
+}
+
+.Card_ec:hover .Card-explore_ec {
+  opacity: 1;
+  -webkit-transform: translate(0, 1rem);
+          transform: translate(0, 1rem);
+  -webkit-transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1) 0.1s;
+  transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1) 0.1s;
+}
+.Card_ec:hover .Card-image_ec {
+  -webkit-transform: scale(1.00) translate(0, -0.5rem) rotateX(20deg);
+          transform: scale(1.00) translate(0, -0.5rem) rotateX(20deg);
+}
+.Card_ec:hover .Card-image_ec::before {
+  opacity: 0.4;
+}
+
+.Card_ec:hover .Card-shadow_ec:nth-child(1) {
+  -webkit-transform: scale(0.82) translate(0, 2.0rem) rotateX(5deg);
+          transform: scale(0.82) translate(0, 2.0rem) rotateX(5deg);
+}
+
+/* end for card for eclair */
+
+/* card for axez */
+
+.Card_ax {
+  position: relative;
+  -webkit-box-flex: 0;
+          flex: 0 1 15rem;
+  background-color: #000;
+  padding-bottom: 5rem;
+  -webkit-transition: background-color 0.2s cubic-bezier(0.5, 0.3, 0.8, 0.06);
+  transition: background-color 0.2s cubic-bezier(0.5, 0.3, 0.8, 0.06);
+  color: #FFF;
+}
+.Card-thumb_ax {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  -webkit-perspective-origin: 50% 0%;
+          perspective-origin: 50% 0%;
+  -webkit-perspective: 600px;
+          perspective: 600px;
+  z-index: 1;
+}
+.Card-image_ax,
+.Card-shadow_ax {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1);
+}
+.Card-shadow_ax {
+  opacity: 0.8;
+}
+.Card-shadow_ax:nth-child(1) {
+  opacity: 0.6;
+  background-color: #000093;
+  -webkit-transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1) 0.07s;
+  transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1) 0.07s;
+}
+
+.Card-image_ax {
+  position: relative;
+  background-size: auto 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #222;
+}
+.Card-image_ax::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #3f51b5;
+  content: '';
+  opacity: 0;
+  -webkit-transition: opacity 0.1s;
+  transition: opacity 0.1s;
+}
+
+.Card-explore_ax {
+  position: absolute;
+  bottom: 0;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  width: 100%;
+  height: 5rem;
+  text-align: center;
+
+  -webkit-transition: all 0.2s cubic-bezier(0.5, 0.3, 0.8, 0.06);
+  transition: all 0.2s cubic-bezier(0.5, 0.3, 0.8, 0.06);
+}
+
+.Card-explore_ax span {
+  padding: 0.5rem;
+  -webkit-box-flex: 1;
+          flex: 1 1 auto;
+  text-align: center;
+  font-size: 20px;
+}
+.Card-explore_ax {
+  opacity: 0;
+  -webkit-transform: translate(0, -1rem);
+          transform: translate(0, -1rem);
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  color: #000093;
+}
+
+.Card_ax:hover {
+  background-color: #222;
+  cursor: pointer;
+}
+.Card_ax:hover .Card-thumb_ax {
+  z-index: 3;
+}
+
+.Card_ax:hover .Card-explore_ax {
+  opacity: 1;
+  -webkit-transform: translate(0, 1rem);
+          transform: translate(0, 1rem);
+  -webkit-transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1) 0.1s;
+  transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1) 0.1s;
+}
+.Card_ax:hover .Card-image_ax {
+  -webkit-transform: scale(1.00) translate(0, -0.5rem) rotateX(20deg);
+          transform: scale(1.00) translate(0, -0.5rem) rotateX(20deg);
+}
+.Card_ax:hover .Card-image_ax::before {
+  opacity: 0.4;
+}
+
+.Card_ax:hover .Card-shadow_ax:nth-child(1) {
+  -webkit-transform: scale(0.82) translate(0, 2.0rem) rotateX(5deg);
+          transform: scale(0.82) translate(0, 2.0rem) rotateX(5deg);
+}
+
+/* end for card for axez */
+
+/* card for kashikin */
+
+.Card_ks {
+  position: relative;
+  -webkit-box-flex: 0;
+          flex: 0 1 15rem;
+  background-color: #000;
+  padding-bottom: 5rem;
+  -webkit-transition: background-color 0.2s cubic-bezier(0.5, 0.3, 0.8, 0.06);
+  transition: background-color 0.2s cubic-bezier(0.5, 0.3, 0.8, 0.06);
+  color: #FFF;
+}
+.Card-thumb_ks {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  -webkit-perspective-origin: 50% 0%;
+          perspective-origin: 50% 0%;
+  -webkit-perspective: 600px;
+          perspective: 600px;
+  z-index: 1;
+}
+.Card-image_ks,
+.Card-shadow_ks {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1);
+}
+.Card-shadow_ks {
+  opacity: 0.8;
+}
+.Card-shadow_ks:nth-child(1) {
+  opacity: 0.6;
+  background-color: #FFD306;
+  -webkit-transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1) 0.07s;
+  transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1) 0.07s;
+}
+
+.Card-image_ks {
+  position: relative;
+  background-size: auto 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #222;
+}
+.Card-image_ks::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #3f51b5;
+  content: '';
+  opacity: 0;
+  -webkit-transition: opacity 0.1s;
+  transition: opacity 0.1s;
+}
+
+.Card-explore_ks {
+  position: absolute;
+  bottom: 0;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  width: 100%;
+  height: 5rem;
+  text-align: center;
+
+  -webkit-transition: all 0.2s cubic-bezier(0.5, 0.3, 0.8, 0.06);
+  transition: all 0.2s cubic-bezier(0.5, 0.3, 0.8, 0.06);
+}
+
+.Card-explore_ks span {
+  padding: 0.5rem;
+  -webkit-box-flex: 1;
+          flex: 1 1 auto;
+  text-align: center;
+  font-size: 20px;
+}
+.Card-explore_ks {
+  opacity: 0;
+  -webkit-transform: translate(0, -1rem);
+          transform: translate(0, -1rem);
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  color: #FFD306;
+}
+
+.Card_ks:hover {
+  background-color: #222;
+  cursor: pointer;
+}
+.Card_ks:hover .Card-thumb_ks {
+  z-index: 3;
+}
+
+.Card_ks:hover .Card-explore_ks {
+  opacity: 1;
+  -webkit-transform: translate(0, 1rem);
+          transform: translate(0, 1rem);
+  -webkit-transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1) 0.1s;
+  transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1) 0.1s;
+}
+.Card_ks:hover .Card-image_ks {
+  -webkit-transform: scale(1.00) translate(0, -0.5rem) rotateX(20deg);
+          transform: scale(1.00) translate(0, -0.5rem) rotateX(20deg);
+}
+.Card_ks:hover .Card-image_ks::before {
+  opacity: 0.4;
+}
+
+.Card_ks:hover .Card-shadow_ks:nth-child(1) {
+  -webkit-transform: scale(0.82) translate(0, 2.0rem) rotateX(5deg);
+          transform: scale(0.82) translate(0, 2.0rem) rotateX(5deg);
+}
+
+/* end for card for kashikin */
+
+/* card for zakro */
+
+.Card_zk {
+  position: relative;
+  -webkit-box-flex: 0;
+          flex: 0 1 15rem;
+  background-color: #000;
+  padding-bottom: 5rem;
+  -webkit-transition: background-color 0.2s cubic-bezier(0.5, 0.3, 0.8, 0.06);
+  transition: background-color 0.2s cubic-bezier(0.5, 0.3, 0.8, 0.06);
+  color: #FFF;
+}
+.Card-thumb_zk {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  -webkit-perspective-origin: 50% 0%;
+          perspective-origin: 50% 0%;
+  -webkit-perspective: 600px;
+          perspective: 600px;
+  z-index: 1;
+}
+.Card-image_zk,
+.Card-shadow_zk {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1);
+}
+.Card-shadow_zk {
+  opacity: 0.8;
+}
+.Card-shadow_zk:nth-child(1) {
+  opacity: 0.6;
+  background-color: #FF8EFF;
+  -webkit-transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1) 0.07s;
+  transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1) 0.07s;
+}
+
+.Card-image_zk {
+  position: relative;
+  background-size: auto 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #222;
+}
+.Card-image_zk::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #3f51b5;
+  content: '';
+  opacity: 0;
+  -webkit-transition: opacity 0.1s;
+  transition: opacity 0.1s;
+}
+
+.Card-explore_zk {
+  position: absolute;
+  bottom: 0;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  width: 100%;
+  height: 5rem;
+  text-align: center;
+
+  -webkit-transition: all 0.2s cubic-bezier(0.5, 0.3, 0.8, 0.06);
+  transition: all 0.2s cubic-bezier(0.5, 0.3, 0.8, 0.06);
+}
+
+.Card-explore_zk span {
+  padding: 0.5rem;
+  -webkit-box-flex: 1;
+          flex: 1 1 auto;
+  text-align: center;
+  font-size: 20px;
+}
+.Card-explore_zk {
+  opacity: 0;
+  -webkit-transform: translate(0, -1rem);
+          transform: translate(0, -1rem);
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  color: #FF8EFF;
+}
+
+.Card_zk:hover {
+  background-color: #222;
+  cursor: pointer;
+}
+.Card_zk:hover .Card-thumb_zk {
+  z-index: 3;
+}
+
+.Card_zk:hover .Card-explore_zk {
+  opacity: 1;
+  -webkit-transform: translate(0, 1rem);
+          transform: translate(0, 1rem);
+  -webkit-transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1) 0.1s;
+  transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1) 0.1s;
+}
+.Card_zk:hover .Card-image_zk {
+  -webkit-transform: scale(1.00) translate(0, -0.5rem) rotateX(20deg);
+          transform: scale(1.00) translate(0, -0.5rem) rotateX(20deg);
+}
+.Card_zk:hover .Card-image_zk::before {
+  opacity: 0.4;
+}
+
+.Card_zk:hover .Card-shadow_zk:nth-child(1) {
+  -webkit-transform: scale(0.82) translate(0, 2.0rem) rotateX(5deg);
+          transform: scale(0.82) translate(0, 2.0rem) rotateX(5deg);
+}
+
+/* end for card for zakro */
+
+/* card for phuckullou */
+
+.Card_pk {
+  position: relative;
+  -webkit-box-flex: 0;
+          flex: 0 1 15rem;
+  background-color: #000;
+  padding-bottom: 5rem;
+  -webkit-transition: background-color 0.2s cubic-bezier(0.5, 0.3, 0.8, 0.06);
+  transition: background-color 0.2s cubic-bezier(0.5, 0.3, 0.8, 0.06);
+  color: #FFF;
+}
+.Card-thumb_pk {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  -webkit-perspective-origin: 50% 0%;
+          perspective-origin: 50% 0%;
+  -webkit-perspective: 600px;
+          perspective: 600px;
+  z-index: 1;
+}
+.Card-image,
+.Card-shadow_pk {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1);
+}
+.Card-shadow_pk {
+  opacity: 0.8;
+}
+.Card-shadow_pk:nth-child(1) {
+  opacity: 0.6;
+  background-color: #00A600;
+  -webkit-transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1) 0.07s;
+  transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1) 0.07s;
+}
+
+.Card-image_pk {
+  position: relative;
+  background-size: auto 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #222;
+}
+.Card-image_pk::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #3f51b5;
+  content: '';
+  opacity: 0;
+  -webkit-transition: opacity 0.1s;
+  transition: opacity 0.1s;
+}
+
+.Card-explore_pk {
+  position: absolute;
+  bottom: 0;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  width: 100%;
+  height: 5rem;
+  text-align: center;
+
+  -webkit-transition: all 0.2s cubic-bezier(0.5, 0.3, 0.8, 0.06);
+  transition: all 0.2s cubic-bezier(0.5, 0.3, 0.8, 0.06);
+}
+
+.Card-explore_pk span {
+  padding: 0.5rem;
+  -webkit-box-flex: 1;
+          flex: 1 1 auto;
+  text-align: center;
+  font-size: 20px;
+}
+.Card-explore_pk {
+  opacity: 0;
+  -webkit-transform: translate(0, -1rem);
+          transform: translate(0, -1rem);
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  color: #00A600;
+}
+
+.Card_pk:hover {
+  background-color: #222;
+  cursor: pointer;
+}
+.Card_pk:hover .Card-thumb_pk {
+  z-index: 3;
+}
+
+.Card_pk:hover .Card-explore_pk {
+  opacity: 1;
+  -webkit-transform: translate(0, 1rem);
+          transform: translate(0, 1rem);
+  -webkit-transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1) 0.1s;
+  transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1) 0.1s;
+}
+.Card_pk:hover .Card-image_pk {
+  -webkit-transform: scale(1.00) translate(0, -0.5rem) rotateX(20deg);
+          transform: scale(1.00) translate(0, -0.5rem) rotateX(20deg);
+}
+.Card_pk:hover .Card-image_pk::before {
+  opacity: 0.4;
+}
+
+.Card_pk:hover .Card-shadow_pk:nth-child(1) {
+  -webkit-transform: scale(0.82) translate(0, 2.0rem) rotateX(5deg);
+          transform: scale(0.82) translate(0, 2.0rem) rotateX(5deg);
+}
+
+/* end for card for phuckullou */
+
+/* card for uie */
+
+.Card_u {
+  position: relative;
+  -webkit-box-flex: 0;
+          flex: 0 1 15rem;
+  background-color: #000;
+  padding-bottom: 5rem;
+  -webkit-transition: background-color 0.2s cubic-bezier(0.5, 0.3, 0.8, 0.06);
+  transition: background-color 0.2s cubic-bezier(0.5, 0.3, 0.8, 0.06);
+  color: #FFF;
+}
+.Card-thumb_u {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  -webkit-perspective-origin: 50% 0%;
+          perspective-origin: 50% 0%;
+  -webkit-perspective: 600px;
+          perspective: 600px;
+  z-index: 1;
+}
+.Card-image_u,
+.Card-shadow_u {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1);
+}
+.Card-shadow_u {
+  opacity: 0.8;
+}
+.Card-shadow_u:nth-child(1) {
+  opacity: 0.6;
+  background-color: #AE57A4;
+  -webkit-transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1) 0.07s;
+  transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1) 0.07s;
+}
+
+.Card-image_u {
+  position: relative;
+  background-size: auto 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #222;
+}
+.Card-image_u::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #3f51b5;
+  content: '';
+  opacity: 0;
+  -webkit-transition: opacity 0.1s;
+  transition: opacity 0.1s;
+}
+
+.Card-explore_u {
+  position: absolute;
+  bottom: 0;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  width: 100%;
+  height: 5rem;
+  text-align: center;
+
+  -webkit-transition: all 0.2s cubic-bezier(0.5, 0.3, 0.8, 0.06);
+  transition: all 0.2s cubic-bezier(0.5, 0.3, 0.8, 0.06);
+}
+
+.Card-explore_u span {
+  padding: 0.5rem;
+  -webkit-box-flex: 1;
+          flex: 1 1 auto;
+  text-align: center;
+  font-size: 20px;
+}
+.Card-explore_u {
+  opacity: 0;
+  -webkit-transform: translate(0, -1rem);
+          transform: translate(0, -1rem);
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  color: #AE57A4;
+}
+
+.Card_u:hover {
+  background-color: #222;
+  cursor: pointer;
+}
+.Card_u:hover .Card-thumb_u {
+  z-index: 3;
+}
+
+.Card_u:hover .Card-explore_u {
+  opacity: 1;
+  -webkit-transform: translate(0, 1rem);
+          transform: translate(0, 1rem);
+  -webkit-transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1) 0.1s;
+  transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1) 0.1s;
+}
+.Card_u:hover .Card-image_u {
+  -webkit-transform: scale(1.00) translate(0, -0.5rem) rotateX(20deg);
+          transform: scale(1.00) translate(0, -0.5rem) rotateX(20deg);
+}
+.Card_u:hover .Card-image_u::before {
+  opacity: 0.4;
+}
+
+.Card_u:hover .Card-shadow_u:nth-child(1) {
+  -webkit-transform: scale(0.82) translate(0, 2.0rem) rotateX(5deg);
+          transform: scale(0.82) translate(0, 2.0rem) rotateX(5deg);
+}
+
+/* end for card for uie */
+
+/* card for alacawa */
+
+.Card_al {
+  position: relative;
+  -webkit-box-flex: 0;
+          flex: 0 1 15rem;
+  background-color: #000;
+  padding-bottom: 5rem;
+  -webkit-transition: background-color 0.2s cubic-bezier(0.5, 0.3, 0.8, 0.06);
+  transition: background-color 0.2s cubic-bezier(0.5, 0.3, 0.8, 0.06);
+  color: #FFF;
+}
+.Card-thumb_al {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  -webkit-perspective-origin: 50% 0%;
+          perspective-origin: 50% 0%;
+  -webkit-perspective: 600px;
+          perspective: 600px;
+  z-index: 1;
+}
+.Card-image_al,
+.Card-shadow_al {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1);
+}
+.Card-shadow_al {
+  opacity: 0.8;
+}
+.Card-shadow_al:nth-child(1) {
+  opacity: 0.6;
+  background-color: #80FFFF;
+  -webkit-transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1) 0.07s;
+  transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1) 0.07s;
+}
+
+.Card-image_al {
+  position: relative;
+  background-size: auto 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #222;
+}
+.Card-image_al::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #3f51b5;
+  content: '';
+  opacity: 0;
+  -webkit-transition: opacity 0.1s;
+  transition: opacity 0.1s;
+}
+
+.Card-explore_al {
+  position: absolute;
+  bottom: 0;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  width: 100%;
+  height: 5rem;
+  text-align: center;
+
+  -webkit-transition: all 0.2s cubic-bezier(0.5, 0.3, 0.8, 0.06);
+  transition: all 0.2s cubic-bezier(0.5, 0.3, 0.8, 0.06);
+}
+
+.Card-explore_al span {
+  padding: 0.5rem;
+  -webkit-box-flex: 1;
+          flex: 1 1 auto;
+  text-align: center;
+  font-size: 20px;
+}
+.Card-explore_al {
+  opacity: 0;
+  -webkit-transform: translate(0, -1rem);
+          transform: translate(0, -1rem);
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  color: #80FFFF;
+}
+
+.Card_al:hover {
+  background-color: #222;
+  cursor: pointer;
+}
+.Card_al:hover .Card-thumb_al {
+  z-index: 3;
+}
+
+.Card_al:hover .Card-explore_al {
+  opacity: 1;
+  -webkit-transform: translate(0, 1rem);
+          transform: translate(0, 1rem);
+  -webkit-transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1) 0.1s;
+  transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1) 0.1s;
+}
+.Card_al:hover .Card-image_al {
+  -webkit-transform: scale(1.00) translate(0, -0.5rem) rotateX(20deg);
+          transform: scale(1.00) translate(0, -0.5rem) rotateX(20deg);
+}
+.Card_al:hover .Card-image_al::before {
+  opacity: 0.4;
+}
+
+.Card_al:hover .Card-shadow_al:nth-child(1) {
+  -webkit-transform: scale(0.82) translate(0, 2.0rem) rotateX(5deg);
+          transform: scale(0.82) translate(0, 2.0rem) rotateX(5deg);
+}
+
+/* end for card for alacawa */
+
+/* card for tyow */
+
+.Card_ty {
+  position: relative;
+  -webkit-box-flex: 0;
+          flex: 0 1 15rem;
+  background-color: #000;
+  padding-bottom: 5rem;
+  -webkit-transition: background-color 0.2s cubic-bezier(0.5, 0.3, 0.8, 0.06);
+  transition: background-color 0.2s cubic-bezier(0.5, 0.3, 0.8, 0.06);
+  color: #FFF;
+}
+.Card-thumb_ty {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  -webkit-perspective-origin: 50% 0%;
+          perspective-origin: 50% 0%;
+  -webkit-perspective: 600px;
+          perspective: 600px;
+  z-index: 1;
+}
+.Card-image_ty,
+.Card-shadow_ty {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1);
+}
+.Card-shadow_ty {
+  opacity: 0.8;
+}
+.Card-shadow_ty:nth-child(1) {
+  opacity: 0.6;
+  background-color: #F75000;
+  -webkit-transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1) 0.07s;
+  transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1) 0.07s;
+}
+
+.Card-image_ty {
+  position: relative;
+  background-size: auto 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #222;
+}
+.Card-image_ty::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #3f51b5;
+  content: '';
+  opacity: 0;
+  -webkit-transition: opacity 0.1s;
+  transition: opacity 0.1s;
+}
+
+.Card-explore_ty {
+  position: absolute;
+  bottom: 0;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  width: 100%;
+  height: 5rem;
+  text-align: center;
+
+  -webkit-transition: all 0.2s cubic-bezier(0.5, 0.3, 0.8, 0.06);
+  transition: all 0.2s cubic-bezier(0.5, 0.3, 0.8, 0.06);
+}
+
+.Card-explore_ty span {
+  padding: 0.5rem;
+  -webkit-box-flex: 1;
+          flex: 1 1 auto;
+  text-align: center;
+  font-size: 20px;
+}
+.Card-explore_ty {
+  opacity: 0;
+  -webkit-transform: translate(0, -1rem);
+          transform: translate(0, -1rem);
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  color: #F75000;
+}
+
+.Card_ty:hover {
+  background-color: #222;
+  cursor: pointer;
+}
+.Card_ty:hover .Card-thumb_ty {
+  z-index: 3;
+}
+
+.Card_ty:hover .Card-explore_ty {
+  opacity: 1;
+  -webkit-transform: translate(0, 1rem);
+          transform: translate(0, 1rem);
+  -webkit-transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1) 0.1s;
+  transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1) 0.1s;
+}
+.Card_ty:hover .Card-image_ty {
+  -webkit-transform: scale(1.00) translate(0, -0.5rem) rotateX(20deg);
+          transform: scale(1.00) translate(0, -0.5rem) rotateX(20deg);
+}
+.Card_ty:hover .Card-image_ty::before {
+  opacity: 0.4;
+}
+
+.Card_ty:hover .Card-shadow_ty:nth-child(1) {
+  -webkit-transform: scale(0.82) translate(0, 2.0rem) rotateX(5deg);
+          transform: scale(0.82) translate(0, 2.0rem) rotateX(5deg);
+}
+
+/* end for card for tyow */

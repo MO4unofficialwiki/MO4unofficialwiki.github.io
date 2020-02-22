@@ -45,7 +45,7 @@
   
   .city_card .city_imgBx
   {
-    bottom: 50px;
+    bottom: 30px;
   }
 
   .city_details{
@@ -58,9 +58,8 @@
 .mytable {
   margin-left:auto; 
   margin-right:auto;
-  width: 70%;
-  height: 70%;
-  
+  width: 80%;
+  height: 80%;
   border-radius: 5px;
   color: #FFF;
 }
