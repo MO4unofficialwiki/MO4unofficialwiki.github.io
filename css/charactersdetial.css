@@ -65,6 +65,41 @@
   color: #FFF;
 }
 
+/* navigation bar for phone */
+
+.mynav ul {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  top: 0;
+}
+
+.mynav li {
+  list-style: none;
+  float: left;
+}
+
+.mynav li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+}
+
+.subnav {
+  position: sticky;
+  top: 50px;
+  background: #000;
+}
+
+.subnavcontainer {
+  align-items: baseline;
+  display: inline-block;
+}
+
+.subnavitem {
+  display: inline-block;
+}
+
 /* tab setting */
 /* breakpoints */
 /* selectors relative to radio inputs */
@@ -132,14 +167,7 @@
 .tabs ul li label br {
   display: none;
 }
-.tabs ul li label svg {
-  fill: #929daf;
-  height: 1.2em;
-  vertical-align: bottom;
-  margin-right: 0.2em;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
+
 .tabs ul li label:hover, .tabs ul li label:focus, .tabs ul li label:active {
   outline: 0;
   color: #bec5cf;

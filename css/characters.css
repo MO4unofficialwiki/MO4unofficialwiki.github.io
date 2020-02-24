@@ -65,7 +65,7 @@
 }
 .Card-shadow_sg:nth-child(1) {
   opacity: 0.6;
-  background-color: #673ab7;
+  background-color: #ba73ff;
   -webkit-transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1) 0.07s;
   transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1) 0.07s;
 }
@@ -118,7 +118,7 @@
           transform: translate(0, -1rem);
   font-size: 0.75rem;
   letter-spacing: 1px;
-  color: #673ab7;
+  color: #ba73ff;
 }
 
 .Card_sg:hover {
@@ -187,7 +187,7 @@
 }
 .Card-shadow_bc:nth-child(1) {
   opacity: 0.6;
-  background-color: #FF0080;
+  background-color: #ff7feb;
   -webkit-transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1) 0.07s;
   transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1) 0.07s;
 }
@@ -240,7 +240,7 @@
           transform: translate(0, -1rem);
   font-size: 0.75rem;
   letter-spacing: 1px;
-  color: #FF0080;
+  color: #ff7feb;
 }
 
 .Card_bc:hover {
@@ -309,7 +309,7 @@
 }
 .Card-shadow_ot:nth-child(1) {
   opacity: 0.6;
-  background-color: #007500;
+  background-color: #58f9c8;
   -webkit-transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1) 0.07s;
   transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1) 0.07s;
 }
@@ -362,7 +362,7 @@
           transform: translate(0, -1rem);
   font-size: 0.75rem;
   letter-spacing: 1px;
-  color: #007500;
+  color: #58f9c8;
 }
 
 .Card_ot:hover {
@@ -431,7 +431,7 @@
 }
 .Card-shadow_sy:nth-child(1) {
   opacity: 0.6;
-  background-color: #005AB5;
+  background-color: #c4ccff;
   -webkit-transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1) 0.07s;
   transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1) 0.07s;
 }
@@ -484,7 +484,7 @@
           transform: translate(0, -1rem);
   font-size: 0.75rem;
   letter-spacing: 1px;
-  color: #005AB5;
+  color: #c4ccff;
 }
 
 .Card_sy:hover {
@@ -553,7 +553,7 @@
 }
 .Card-shadow_ja:nth-child(1) {
   opacity: 0.6;
-  background-color: #2894FF;
+  background-color: #b5f6ff;
   -webkit-transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1) 0.07s;
   transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1) 0.07s;
 }
@@ -606,7 +606,7 @@
           transform: translate(0, -1rem);
   font-size: 0.75rem;
   letter-spacing: 1px;
-  color: #2894FF;
+  color: #b5f6ff;
 }
 
 .Card_ja:hover {
@@ -675,7 +675,7 @@
 }
 .Card-shadow_co:nth-child(1) {
   opacity: 0.6;
-  background-color: #6A6AFF;
+  background-color: #b5f6ff;
   -webkit-transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1) 0.07s;
   transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1) 0.07s;
 }
@@ -728,7 +728,7 @@
           transform: translate(0, -1rem);
   font-size: 0.75rem;
   letter-spacing: 1px;
-  color: #6A6AFF;
+  color: #b5f6ff;
 }
 
 .Card_co:hover {
@@ -797,7 +797,7 @@
 }
 .Card-shadow_mr:nth-child(1) {
   opacity: 0.6;
-  background-color: #00E3E3;
+  background-color: #68fff4;
   -webkit-transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1) 0.07s;
   transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1) 0.07s;
 }
@@ -850,7 +850,7 @@
           transform: translate(0, -1rem);
   font-size: 0.75rem;
   letter-spacing: 1px;
-  color: #00E3E3;
+  color: #68fff4;
 }
 
 .Card_mr:hover {
@@ -919,7 +919,7 @@
 }
 .Card-shadow_fs:nth-child(1) {
   opacity: 0.6;
-  background-color: #003D79;
+  background-color: #9f9aff;
   -webkit-transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1) 0.07s;
   transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1) 0.07s;
 }
@@ -972,7 +972,7 @@
           transform: translate(0, -1rem);
   font-size: 0.75rem;
   letter-spacing: 1px;
-  color: #003D79;
+  color: #9f9aff;
 }
 
 .Card_fs:hover {
@@ -1041,7 +1041,7 @@
 }
 .Card-shadow_ad:nth-child(1) {
   opacity: 0.6;
-  background-color: #EA0000;
+  background-color: #ff8890;
   -webkit-transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1) 0.07s;
   transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1) 0.07s;
 }
@@ -1094,7 +1094,7 @@
           transform: translate(0, -1rem);
   font-size: 0.75rem;
   letter-spacing: 1px;
-  color: #EA0000;
+  color: #ff8890;
 }
 
 .Card_ad:hover {
@@ -1163,7 +1163,7 @@
 }
 .Card-shadow_ec:nth-child(1) {
   opacity: 0.6;
-  background-color: #007500;
+  background-color: #b4ff8e;
   -webkit-transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1) 0.07s;
   transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1) 0.07s;
 }
@@ -1216,7 +1216,7 @@
           transform: translate(0, -1rem);
   font-size: 0.75rem;
   letter-spacing: 1px;
-  color: #007500;
+  color: #b4ff8e;
 }
 
 .Card_ec:hover {
@@ -1285,7 +1285,7 @@
 }
 .Card-shadow_ax:nth-child(1) {
   opacity: 0.6;
-  background-color: #000093;
+  background-color: #85b8ff;
   -webkit-transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1) 0.07s;
   transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1) 0.07s;
 }
@@ -1338,7 +1338,7 @@
           transform: translate(0, -1rem);
   font-size: 0.75rem;
   letter-spacing: 1px;
-  color: #000093;
+  color: #85b8ff;
 }
 
 .Card_ax:hover {
@@ -1407,7 +1407,7 @@
 }
 .Card-shadow_ks:nth-child(1) {
   opacity: 0.6;
-  background-color: #FFD306;
+  background-color: #ffff85;
   -webkit-transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1) 0.07s;
   transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1) 0.07s;
 }
@@ -1460,7 +1460,7 @@
           transform: translate(0, -1rem);
   font-size: 0.75rem;
   letter-spacing: 1px;
-  color: #FFD306;
+  color: #ffff85;
 }
 
 .Card_ks:hover {
@@ -1529,7 +1529,7 @@
 }
 .Card-shadow_zk:nth-child(1) {
   opacity: 0.6;
-  background-color: #FF8EFF;
+  background-color: #ff8ecd;
   -webkit-transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1) 0.07s;
   transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1) 0.07s;
 }
@@ -1582,7 +1582,7 @@
           transform: translate(0, -1rem);
   font-size: 0.75rem;
   letter-spacing: 1px;
-  color: #FF8EFF;
+  color: #ff8ecd;
 }
 
 .Card_zk:hover {
@@ -1651,7 +1651,7 @@
 }
 .Card-shadow_pk:nth-child(1) {
   opacity: 0.6;
-  background-color: #00A600;
+  background-color: #85ff8f;
   -webkit-transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1) 0.07s;
   transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1) 0.07s;
 }
@@ -1704,7 +1704,7 @@
           transform: translate(0, -1rem);
   font-size: 0.75rem;
   letter-spacing: 1px;
-  color: #00A600;
+  color: #85ff8f;
 }
 
 .Card_pk:hover {
@@ -1773,7 +1773,7 @@
 }
 .Card-shadow_u:nth-child(1) {
   opacity: 0.6;
-  background-color: #AE57A4;
+  background-color: #ffdf86;
   -webkit-transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1) 0.07s;
   transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1) 0.07s;
 }
@@ -1826,7 +1826,7 @@
           transform: translate(0, -1rem);
   font-size: 0.75rem;
   letter-spacing: 1px;
-  color: #AE57A4;
+  color: #ffdf86;
 }
 
 .Card_u:hover {
@@ -1895,7 +1895,7 @@
 }
 .Card-shadow_al:nth-child(1) {
   opacity: 0.6;
-  background-color: #80FFFF;
+  background-color: #7cfdff;
   -webkit-transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1) 0.07s;
   transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1) 0.07s;
 }
@@ -1948,7 +1948,7 @@
           transform: translate(0, -1rem);
   font-size: 0.75rem;
   letter-spacing: 1px;
-  color: #80FFFF;
+  color: #7cfdff;
 }
 
 .Card_al:hover {
@@ -2017,7 +2017,7 @@
 }
 .Card-shadow_ty:nth-child(1) {
   opacity: 0.6;
-  background-color: #F75000;
+  background-color: #ff9f87;
   -webkit-transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1) 0.07s;
   transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1) 0.07s;
 }
@@ -2070,7 +2070,7 @@
           transform: translate(0, -1rem);
   font-size: 0.75rem;
   letter-spacing: 1px;
-  color: #F75000;
+  color: #ff9f87;
 }
 
 .Card_ty:hover {
