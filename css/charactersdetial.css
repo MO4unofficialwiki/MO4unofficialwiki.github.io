@@ -59,9 +59,11 @@
 /* table */
 
 .mytable {
+  table-layout:fixed;
+  word-break:break-all;
   margin-left:auto; 
   margin-right:auto;
-  width: 100%;
+  width: 90%;
   color: #FFF;
 }
 
