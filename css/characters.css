@@ -1637,7 +1637,7 @@
           perspective: 600px;
   z-index: 1;
 }
-.Card-image,
+.Card-image_pk,
 .Card-shadow_pk {
   position: absolute;
   display: block;
