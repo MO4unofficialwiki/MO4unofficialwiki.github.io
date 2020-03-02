@@ -75,7 +75,7 @@ body {
   position: relative;
   /* animation 參數設定 */
   animation-name: MoveToRight;
-  animation-duration: 0.8s;
+  animation-duration: 0.6s;
   animation-fill-mode: forwards; 
 }
 
