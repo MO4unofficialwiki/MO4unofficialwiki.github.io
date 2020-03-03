@@ -9,6 +9,14 @@ body {
   overflow-x: hidden;
 }
 
+/* center image */
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
 .lines {
 	text-align: center;
 	padding-top: 50px;
@@ -81,7 +89,7 @@ body {
 
 @keyframes MoveToRight {
   from { left: -200%; }
-  to { left: 20%; }
+  to { left: 30%; }
 }
 
 .sgani {
@@ -95,7 +103,7 @@ body {
 
 @keyframes MoveToLeft {
   from { right: -200%; }
-  to { right: -20%; }
+  to { right: -30%; }
 }
 
 /* 文字淡入 */

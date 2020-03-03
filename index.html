@@ -19,7 +19,8 @@
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
 
   <!-- Custom styles for this template -->
-  <link href="css/resume.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link href="css/resume.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 
 </head>
@@ -30,7 +31,6 @@
 
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center">
       <div class="w-100">
-        
         <div class="jrani" style="padding-top: 50px;">
           <img class="img-fluid" src="img/jr.png" alt="">
         </div>
@@ -42,45 +42,33 @@
         <div class="sgani">
           <img class="img-fluid" src="img/sg.png" alt="">
         </div>
-
       </div>
     </section>
 
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" style="color: #EEE;" id="about">
-      <div class="w-100">
-
-        <span class="d-none d-lg-block">
-          <img class="img-fluid" src="img/axezL.png" alt="" style="width: 10%;" align="left">
-        </span>
-        <span class="d-none d-lg-block">
-          <img class="img-fluid" src="img/axezR.png" alt="" style="width: 10%;" align="right">
-        </span>
-
-        <h4 class="lines" style="font-weight:bold;">Welcome To Marikin Online 4 Unofficial Wiki!</h4>
-        <h6 class="borderline">⚠このページは大量のネタバレがあります⚠</h6>
-
-        <div class="row">
-            <div class="col-sm clearfix hidden-xs borderline">
-              <h6>Story</h6>
-              <a class="nav-link" href="boss.html">ボス</a>
-              <a class="nav-link" href="maze.html">ダンジョン</a>
-            </div>
-            <div class="col-sm clearfix hidden-xs borderline">
-              <h6>Others</h6>
-              <a class="nav-link" href="characters.html">キャラクター</a>
-              <a class="nav-link" href="enemies.html">エネミー</a>
-              <a class="nav-link" href="items.html">アイテム</a>
-              <a class="nav-link" href="casino.html">カジノ</a>
-              <a class="nav-link" href="errands.html">パシリオーダー</a>
-              <a class="nav-link" href="arena.html">マザイフロンティア</a>
-              <a class="nav-link" href="forge.html">段位試練</a>
-            </div>
-          </div>
-
-          <div align="center" style="padding-top: 50px;">
-          <a class="js-scroll-trigger" href="#footer">other info↓</a>
+      <div class="row" data-aos="fade-left">
+        <div class="col-lg-6">
+          <img id="image">
         </div>
-        
+
+        <div class="col-lg-6">
+          <img class="img-fluid center" src="img/profile.png" alt="" style="width: 40%">
+          <h6 class="borderline">⚠このページは大量のネタバレがあります⚠</h6>
+          <div class="col-sm clearfix hidden-xs borderline">
+            <h6>Story</h6>
+            <a class="nav-link" href="boss.html">ボス</a>
+            <a class="nav-link" href="maze.html">ダンジョン</a>
+            <h6>Others</h6>
+            <a class="nav-link" href="characters.html">キャラクター</a>
+            <a class="nav-link" href="enemies.html">エネミー</a>
+            <a class="nav-link" href="items.html">アイテム</a>
+            <a class="nav-link" href="casino.html">カジノ</a>
+            <a class="nav-link" href="errands.html">パシリオーダー</a>
+            <a class="nav-link" href="arena.html">マザイフロンティア</a>
+            <a class="nav-link" href="forge.html">段位試練</a>
+            <a class="js-scroll-trigger" href="#footer">other info↓</a>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -90,7 +78,7 @@
     <div class="w-100">
       <footer class="container py-5" id="footer">
         <div class="row">
-          <div class="col-4 col-md borderline">
+          <div class="col-6 col-md borderline">
             <h5>wiki製作リスト（敬称略）</h5>
             <ul class="list-unstyled text-small">
               <li>はっこつ管理人</li>
@@ -100,19 +88,14 @@
               <li>えっぐん</li>
             </ul>
           </div>
-          <div class="col-4 col-md borderline">
+          <div class="col-6 col-md borderline">
             <h5>Links</h5>
             <ul class="list-unstyled text-small">
               <li><a class="nav-link" href="https://www.marikinonline4.com/">Official Website</a></li>
               <li><a class="nav-link" href="https://twitter.com/marikinonline4">Official Twitter</a></li>
               <li><a class="nav-link" href="https://www.freem.ne.jp/win/game/19175">Game Download</a></li>
             </ul>
-          </div>
-          <div class="col-4 col-md borderline">
             <h5>問い合わせ</h5>
-            <ul class="list-unstyled text-small">
-              <li></li>
-            </ul>
           </div>
         </div>
       </footer>
@@ -127,7 +110,12 @@
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
   <!-- Custom scripts for this template -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   <script src="js/resume.min.js"></script>
+  <script src="js/indexpic.js"></script>
 
 </body>
 

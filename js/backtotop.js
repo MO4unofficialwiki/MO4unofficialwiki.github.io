@@ -9,6 +9,8 @@ $(window).scroll(function() {
 });
 
 btn.on('click', function(e) {
-  e.preventDefault();
-  $('html, body').animate({scrollTop:0}, '1000');
+  $('html, body').animate({
+      scrollTop: 0
+    }, 1500, 'easeInOutExpo');
+    return false;
 });
