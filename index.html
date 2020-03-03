@@ -46,12 +46,35 @@
     </section>
 
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" style="color: #EEE;" id="about">
-      <div class="row" data-aos="fade-left">
-        <div class="col-lg-6">
-          <img id="image">
-        </div>
+      <div class="box box2">
+        <div class="row" data-aos="fade-left">
+          <div class="col-lg-6">
+            <img id="image">
+          </div>
 
-        <div class="col-lg-6">
+          <div class="col-lg-6">
+            <img class="img-fluid center" src="img/profile.png" alt="" style="width: 40%">
+            <h6 class="borderline">⚠このページは大量のネタバレがあります⚠</h6>
+            <div class="col-sm clearfix hidden-xs borderline">
+              <h6>Story</h6>
+              <a class="nav-link" href="boss.html">ボス</a>
+              <a class="nav-link" href="maze.html">ダンジョン</a>
+              <h6>Others</h6>
+              <a class="nav-link" href="characters.html">キャラクター</a>
+              <a class="nav-link" href="enemies.html">エネミー</a>
+              <a class="nav-link" href="items.html">アイテム</a>
+              <a class="nav-link" href="casino.html">カジノ</a>
+              <a class="nav-link" href="errands.html">パシリオーダー</a>
+              <a class="nav-link" href="arena.html">マザイフロンティア</a>
+              <a class="nav-link" href="forge.html">段位試練</a>
+              <a class="js-scroll-trigger" href="#footer">other info↓</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="box box1">
+        <div class="col-lg-12">
           <img class="img-fluid center" src="img/profile.png" alt="" style="width: 40%">
           <h6 class="borderline">⚠このページは大量のネタバレがあります⚠</h6>
           <div class="col-sm clearfix hidden-xs borderline">
@@ -112,7 +135,9 @@
   <!-- Custom scripts for this template -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
-    AOS.init();
+    AOS.init({
+      duration: 1000,
+    });
   </script>
   <script src="js/resume.min.js"></script>
   <script src="js/indexpic.js"></script>
