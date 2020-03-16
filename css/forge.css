@@ -87,3 +87,8 @@
     margin: 30px;
   }
 }
+
+/* custom a for errands */
+.customa a {
+  text-decoration: none;
+}
