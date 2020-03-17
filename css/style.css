@@ -101,7 +101,7 @@ body {
 
 @keyframes MoveToRight {
   from { left: -200%; }
-  to { left: 30%; }
+  to { left: 25%; }
 }
 
 .sgani {
@@ -115,7 +115,7 @@ body {
 
 @keyframes MoveToLeft {
   from { right: -200%; }
-  to { right: -30%; }
+  to { right: -25%; }
 }
 
 /* 文字淡入 */
