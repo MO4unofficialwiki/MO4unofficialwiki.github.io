@@ -149,10 +149,9 @@ body {
 
 .speechbubble {
   background-color: #26272b;
-  margin-left: 50px; 
-  padding-top: 20px;
+  padding-top: 30px;
   max-width: 400px;
-  font-size: 20px;
+  font-size: 16px;
   text-align: center;
   cursor: default;
 }
@@ -166,7 +165,7 @@ body {
   padding-top: 20px;
   position: relative;
   bottom: -40px;
-  left: 230px;
+  left: 200px;
   border-width: 20px 20px 0 0;
   border-style: solid;
   border-color: #26272b transparent;
