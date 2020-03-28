@@ -95,7 +95,7 @@ body {
 
 @keyframes MoveToRight {
   from { left: -200%; }
-  to { left: 25%; }
+  to { left: 30%; }
 }
 
 .sgani {
@@ -111,7 +111,7 @@ body {
 
 @keyframes MoveToLeft {
   from { right: -200%; }
-  to { right: -25%; }
+  to { right: -30%; }
 }
 
 /* ready text fade in */
