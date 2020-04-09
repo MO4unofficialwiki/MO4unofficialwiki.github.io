@@ -167,3 +167,21 @@ a {
   font-size: 18px;
   font-weight: 500;
 }
+
+/* slide toggle in catastrophe page */
+.slide-toggle .box-toggle {
+  padding: 10px 0 39px; 
+}
+
+.slide-toggle .box-toggle .contorol {
+  color: #fff;
+  overflow: hidden;
+  margin-top: 30px;
+}
+.slide-toggle .box-toggle {
+  float: right !important;
+}
+
+.content-box {
+  padding-top: 10px;
+}
