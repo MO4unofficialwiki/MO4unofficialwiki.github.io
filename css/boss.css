@@ -178,9 +178,6 @@ a {
   overflow: hidden;
   margin-top: 30px;
 }
-.slide-toggle .box-toggle {
-  float: right !important;
-}
 
 .content-box {
   padding-top: 10px;
