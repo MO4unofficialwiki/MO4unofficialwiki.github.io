@@ -89,13 +89,13 @@ body {
   position: relative;
   overflow:hidden;
   animation-name: MoveToRight;
-  animation-duration: 0.6s;
+  animation-duration: 0.5s;
   animation-fill-mode: forwards;
 }
 
 @keyframes MoveToRight {
   from { left: -200%; }
-  to { left: 30%; }
+  to { left: 10%; }
 }
 
 .sgani {
@@ -105,13 +105,13 @@ body {
   position: relative;
   overflow:hidden;
   animation-name: MoveToLeft;
-  animation-duration: 1s;
+  animation-duration: 0.9s;
   animation-fill-mode: forwards;
 }
 
 @keyframes MoveToLeft {
   from { right: -200%; }
-  to { right: -30%; }
+  to { right: -10%; }
 }
 
 /* ready text fade in */
