@@ -149,7 +149,6 @@
 a {
   text-decoration: none;
   display: inline-block;
-  padding: 8px 16px;
 }
 
 .previous {
@@ -179,4 +178,41 @@ a {
 .content-box {
   padding-top: 10px;
   padding-bottom: 20px;
+}
+
+/* link for maze page */
+.link {
+  position: relative;
+  -webkit-transition: -webkit-clip-path 275ms ease;
+  transition: -webkit-clip-path 275ms ease;
+  transition: clip-path 275ms ease;
+  transition: clip-path 275ms ease, -webkit-clip-path 275ms ease;
+}
+.link:hover span::before, .link:focus span::before {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+.link span {
+  position: relative;
+  display: inline-block;
+  color: #9f9aff;
+}
+.link span::before {
+  position: absolute;
+  content: attr(data-content);
+  color: #85b8ff;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #85b8ff;
+          text-decoration-color: #85b8ff;
+  -webkit-clip-path: polygon(0 0, 0 0, 0% 100%, 0 100%);
+          clip-path: polygon(0 0, 0 0, 0% 100%, 0 100%);
+  -webkit-transition: -webkit-clip-path 275ms ease;
+  transition: -webkit-clip-path 275ms ease;
+  transition: clip-path 275ms ease;
+  transition: clip-path 275ms ease, -webkit-clip-path 275ms ease;
+}
+
+span.line-through::before {
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
 }
