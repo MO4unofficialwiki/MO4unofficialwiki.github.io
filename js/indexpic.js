@@ -1,8 +1,9 @@
 //random change picture
 
 var images = [
-  "https://images.plurk.com/1mVJf90QHSRemW9HhXU91a.png", //by maltoseslime
-  "https://images.plurk.com/2CcHWYBCSrXABvW1HbzE94.png" //by kumo
+  "https://images.plurk.com/xHdKNEwqMKqVQx8gb1F5.png", //by maltoseslime
+  "https://images.plurk.com/2qnYcMhmlQQvb8a1c8RQ1p.png", //by kumo
+  "https://images.plurk.com/3JbyAT52bnBx0sstc9gv1P.png" //by ゾウリムシ
 ];
 
 function randImg() {
