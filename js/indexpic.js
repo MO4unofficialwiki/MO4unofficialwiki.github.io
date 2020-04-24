@@ -1,9 +1,10 @@
 //random change picture
 
 var images = [
-  "https://images.plurk.com/xHdKNEwqMKqVQx8gb1F5.png", //by maltoseslime
-  "https://images.plurk.com/2qnYcMhmlQQvb8a1c8RQ1p.png", //by kumo
-  "https://images.plurk.com/3JbyAT52bnBx0sstc9gv1P.png" //by ゾウリムシ
+  "https://images.plurk.com/66ZfAUsOYPNROkIgvJcZQ4.png", //by maltoseslime
+  "https://images.plurk.com/3Ypb2sOc3NlXYZHlisrlBW.png", //by kumo
+  "https://images.plurk.com/15bN3U5xVYezMS10UL2AF9.png", //by ゾウリムシ
+  "https://images.plurk.com/44gVDWMUkEuTj87SnxevCp.png" //by 山下幸々
 ];
 
 function randImg() {
