@@ -90,6 +90,12 @@
           メインストーリー Part 3
         </h2>
 
+        <div class="col-lg-12" align="center">
+          <button type="button" class="btn btn-dark click">
+            <span>ネタバレ？</span>
+          </button>
+        </div>
+
         <ul class="navbar-nav myul">
           <li>
             <a class="js-scroll-trigger" href="#nine1">Chapter 9（前）</a>
@@ -119,7 +125,7 @@
                 <i class="fas fa-caret-down"></i>
               </button>
             </div>
-            <div class="content-box">
+            <div class="content-box down">
               ガパニーズシティに入ると
               <a class="link" href="../boss/ホモビキャノン.html" target="_blank">
                 <span data-content="ホモビキャノンと戦闘">ホモビキャノンと戦闘</span>
@@ -166,7 +172,7 @@
                 <i class="fas fa-caret-down"></i>
               </button>
             </div>
-            <div class="content-box">
+            <div class="content-box down">
               ヘルハウンド後、１Fはまっすぐ上の階段、２Fは（５８、５１）の階段、３Fは（４８、１２）の階段、４Fはエレベーター（９１、４０上）先の（７０、５７）の階段、と進めば後は道なり<br/>
               進むと
               <a class="link" href="../boss/森風.html" target="_blank">
@@ -188,7 +194,7 @@
                 <i class="fas fa-caret-down"></i>
               </button>
             </div>
-            <div class="content-box">
+            <div class="content-box down">
               森風戦後、上へと向かう<br/>
               一方通行の扉（２０、４１上）を超えると戻ることができなくなるので注意、あとはほぼ一本道<br/>
               ワープパネル（１００、６１）に立つと高橋戦エリアへと飛ぶ。ここでは全回復・セーブに加えてメンバーチェンジが可能<br/>
@@ -212,7 +218,7 @@
                 <i class="fas fa-caret-down"></i>
               </button>
             </div>
-            <div class="content-box">
+            <div class="content-box down">
               高橋戦後、退路が断たれるので上へと向かう<br/>
               切身エリアはワープパネルに乗るまで座標がない、頑張って迷ってください。一方通行の扉がたくさんあるけど戻れない場所に宝はないので安心<br/>
               切身戦前にはメンバーチェンジが可能、進むと
@@ -255,7 +261,7 @@
                 <i class="fas fa-caret-down"></i>
               </button>
             </div>
-            <div class="content-box">
+            <div class="content-box down">
               上に１と書かれた入り口に入る<br/>
               （１９、１６上）のエレベーターで下へ。エレベーター前と後、それぞれ手前の宝箱からキーハンドルを取り忘れないように<br/>
               エリア１のB１、エレベーター（５１、３３上）に乗る<br/>
@@ -325,6 +331,12 @@
       $(".contorol").click(function () {
         $(this).next(".content-box").slideToggle();
       });
+    });
+
+    $(document).ready(function(){
+      $(".click").click(function(){
+        $(".down").slideToggle({ duration: 1200, easing: "easeInOutQuart" });
+      })
     });
   </script>
 

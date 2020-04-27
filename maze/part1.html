@@ -90,6 +90,12 @@
           メインストーリー Part 1
         </h2>
 
+        <div class="col-lg-12" align="center">
+          <button type="button" class="btn btn-dark click">
+            <span>ネタバレ？</span>
+          </button>
+        </div>
+
         <ul class="navbar-nav myul">
           <li>
             <a class="js-scroll-trigger" href="#one">Chapter 1</a>
@@ -171,7 +177,7 @@
                 <i class="fas fa-caret-down"></i>
               </button>
             </div>
-            <div class="content-box">
+            <div class="content-box down">
               <img class="img-fluid" src="../img/chapter1.png" alt="">
             </div>
           </div>
@@ -286,6 +292,12 @@
       $(".contorol").click(function () {
         $(this).next(".content-box").slideToggle();
       });
+    });
+
+    $(document).ready(function(){
+      $(".click").click(function(){
+        $(".down").slideToggle({ duration: 1200, easing: "easeInOutQuart" });
+      })
     });
   </script>
 

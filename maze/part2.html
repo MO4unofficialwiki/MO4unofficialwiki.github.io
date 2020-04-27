@@ -90,6 +90,12 @@
           メインストーリー Part 2
         </h2>
 
+        <div class="col-lg-12" align="center">
+          <button type="button" class="btn btn-dark click">
+            <span>ネタバレ？</span>
+          </button>
+        </div>
+
         <ul class="navbar-nav myul">
           <li>
             <a class="js-scroll-trigger" href="#six">Chapter 6</a>
@@ -143,7 +149,7 @@
                 <i class="fas fa-caret-down"></i>
               </button>
             </div>
-            <div class="content-box">
+            <div class="content-box down">
               水の箇所は（１６、５５）（５６、８７）（６４、２１）（８７、５３）の四箇所。全て調べないと下水天然水は手に入らない<br/>
             </div>
           </div>
@@ -174,7 +180,7 @@
                 <i class="fas fa-caret-down"></i>
               </button>
             </div>
-            <div class="content-box">
+            <div class="content-box down">
               スイッチは（５８、２３左）（４８、２４下）（４１、１７右）（４１、５３下）（４１、５５上）（１７、６３右）（２６、７３右）（３８、７５右）（５４、８５上）の順番で入れる<br/>
             </div>
           </div>
@@ -224,7 +230,7 @@
                 <i class="fas fa-caret-down"></i>
               </button>
             </div>
-            <div class="content-box">
+            <div class="content-box down">
               その先の石碑を三回読む<br/>
               最初のエリアへと戻る途中に新しい小部屋があるので、そこで道順を覚える<br/>
               <!-- >（右・左・左・右）<br/><-->
@@ -319,6 +325,12 @@
       $(".contorol").click(function () {
         $(this).next(".content-box").slideToggle();
       });
+    });
+
+    $(document).ready(function(){
+      $(".click").click(function(){
+        $(".down").slideToggle({ duration: 1200, easing: "easeInOutQuart" });
+      })
     });
   </script>
 
