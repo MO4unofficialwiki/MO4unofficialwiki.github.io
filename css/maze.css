@@ -28,7 +28,7 @@
   position: relative;
   display: inline-block;
   margin: 20px;
-  max-width: 250px;
+  height: 90%;
   width: 100%;
   box-shadow: none !important;
   -webkit-transform: translateZ(0);
@@ -113,7 +113,7 @@
   position: relative;
   display: inline-block;
   margin: 20px;
-  max-width: 250px;
+  height: 90%;
   width: 100%;
   box-shadow: none !important;
   -webkit-transform: translateZ(0);
